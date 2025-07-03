@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+}
+#logo{
+    width: 20%;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+}
+#banner{
+    width: 80%;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+img{
+    border-radius: 50px;
+    border-top: 30px;
+}
+#banner h1{
+    width: 100%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+}
+ul li{
+    margin: 20px;
+}
+#linha2{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(161, 212, 241);
+    height: 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
+#clientes h2{
+    width: 100%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+#linha3{
+    text-align: center;
+    background-color: rgb(161, 212, 241);
+    width: 100%;
+    height: 80.6vh;
+    display: flex;
+}
+aside{
+    background-color:  rgb(161, 212, 241);
+    width: 20%;
+    height: 100%;
+}
+#imagens img{
+    margin-bottom: 30px;
+}
+.first{
+    margin-top: 10px;
+}
+#conteudo{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(161, 212, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.texto h2 h3{
+}
