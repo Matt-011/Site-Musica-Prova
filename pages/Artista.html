@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artistas</title>
+  <link rel="stylesheet" href="../css/estilo2.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="logo">
+      <img src="../images/cd.png" alt="Logo" />
+    </div>
+    <div class="banner">
+      <h1>Mundo do Rap</h1>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Ajuda</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="linha2">
+    <h2>Os Artistas Mais Pesquisados</h2>
+  </section>
+
+  <main>
+    <div class="container">
+      <button class="arrow left" onclick="moveLeft()">❮</button>
+      <div class="carousel-wrapper">
+        <div class="carousel" id="carousel">
+          <div class="card">
+            <a href="../pages/KYAlbuns.html">
+              <img src="../images/YE.png" alt="Kanye West / Ye" />
+            </a>
+            <div class="card-texto">Kanye West / Ye</div>
+          </div>
+          <div class="card">
+            <a href="../pages/KLAlbuns.html">
+              <img src="../images/kdot.png" alt="Kendrick Lamar" />
+            </a>
+            <div class="card-texto">Kendrick Lamar</div>
+          </div>
+          <div class="card">
+            <img src="../images/eminem.jpg" alt="Eminem" />
+            <div class="card-texto">Eminem</div>
+          </div>
+          <div class="card">
+            <img src="../images/tyler.png" alt="Tyler, The Creator" />
+            <div class="card-texto">Tyler, The Creator</div>
+          </div>
+          <div class="card">
+            <img src="../images/travis-scott.jpg" alt="Travis Scott" />
+            <div class="card-texto">Travis Scott</div>
+          </div>
+          <div class="card">
+            <a href="../pages/YUNAlbuns.html">
+              <img src="../images/Yun Li.png" alt="YUNG LIXO / YUN LI" />
+            </a>
+            <div class="card-texto">YUNG LIXO / YUN LI</div>
+          </div>
+        </div>
+      </div>
+      <button class="arrow right" onclick="moveRight()">❯</button>
+    </div>
+    <hr>
+
+    <section class="todos-artistas">
+      <div class="cabecalho-artistas">
+        <h2>Todos os Artistas</h2>
+        <input type="text" id="pesquisa" placeholder="Pesquisar artista...">
+      </div>
+
+      <div class="letra-bloco" data-letra="E">
+        <h3>E</h3>
+        <div class="artistas-letra">
+          <div class="artista">
+            <img src="../images/eminem.jpg" alt="Eminem" />
+            <p>Eminem</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="letra-bloco" data-letra="K">
+        <h3>K</h3>
+        <div class="artistas-letra">
+          <div class="artista">
+            <a href="../pages/KYAlbuns.html">
+              <img src="../images/YE.png" alt="Kanye West" />
+            </a>
+            <p>Kanye West</p>
+          </div>
+          <div class="artista">
+            <a href="../pages/KLAlbuns.html">
+              <img src="../images/kdot.png" alt="Kendrick Lamar" />
+            </a>
+            <p>Kendrick Lamar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="letra-bloco" data-letra="T">
+        <h3>T</h3>
+        <div class="artistas-letra">
+          <div class="artista">
+            <img src="../images/travis-scott.jpg" alt="Travis Scott" />
+            <p>Travis Scott</p>
+          </div>
+          <div class="artista">
+            <img src="../images/tyler.png" alt="Tyler, The Creator" />
+            <p>Tyler, The Creator</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="letra-bloco" data-letra="Y">
+        <h3>Y</h3>
+        <div class="artistas-letra">
+          <div class="artista">
+            <a href="../pages/YUNAlbuns.html">
+              <img src="../images/Yun Li.png" alt="YUN LI" />
+            </a>
+            <p>YUN LI</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2025 - Todos os direitos reservados &copy; MATEUS ROCHA</p>
+  </footer>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    let scrollPosition = 0;
+    const cardWidth = 220;
+
+    function moveLeft() {
+      scrollPosition -= cardWidth;
+      if (scrollPosition < 0) scrollPosition = 0;
+      carousel.style.transform = `translateX(-${scrollPosition}px)`;
+    }
+
+    function moveRight() {
+      const maxScroll = carousel.scrollWidth - carousel.offsetWidth;
+      scrollPosition += cardWidth;
+      if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+      carousel.style.transform = `translateX(-${scrollPosition}px)`;
+    }
+
+    const input = document.getElementById('pesquisa');
+    input.addEventListener('input', () => {
+      const termo = input.value.toLowerCase();
+      document.querySelectorAll('.letra-bloco').forEach(bloco => {
+        let visivel = false;
+        bloco.querySelectorAll('.artista').forEach(artista => {
+          const nome = artista.querySelector('p').textContent.toLowerCase();
+          if (nome.includes(termo)) {
+            artista.style.display = 'flex';
+            visivel = true;
+          } else {
+            artista.style.display = 'none';
+          }
+        });
+        bloco.style.display = visivel ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+
+</html>
