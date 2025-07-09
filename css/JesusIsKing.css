@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: black;
-  color: white;
+  background: linear-gradient(90deg,rgba(7, 118, 237, 1) 0%, rgba(255, 255, 255, 1) 50%);
+  color: black;
 }
 
 .Voltar{
-  color: white;
+  color: rgb(0, 17, 255);
   text-decoration: none;
   font-weight: bold;
 }
@@ -41,7 +41,7 @@ body {
 
 .album-info p {
   font-size: 14px;
-  color: #bbb;
+  color: black;
 }
 
 .tracklist {
@@ -57,11 +57,11 @@ body {
 
 .tracklist li {
   padding: 15px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid black;
 }
 
 .tracklist a {
-  color: white;
+  color: black;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
@@ -69,12 +69,12 @@ body {
 }
 
 .tracklist a:hover {
-  background-color: #222;
+  background-color: blue;
 }
 
 .tempo {
   font-size: 12px;
-  color: #888;
+  color: black;
 }
 
 @media screen and (min-height: 400px) {
