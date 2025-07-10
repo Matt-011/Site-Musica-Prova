@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: #333;
   color: white;
 }
 
@@ -57,7 +57,7 @@ body {
 
 .tracklist li {
   padding: 15px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid white;
 }
 
 .tracklist a {
