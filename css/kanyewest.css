@@ -76,11 +76,11 @@ body {
 .banner-artista {
   text-align: center;
   padding: 60px 20px 40px;
-  background: url(../images/lets-be-honest-about-bully-v0-nx.png);
+  background: black;
   background-repeat: no-repeat;
   background-size:cover;
   background-position-y: center;
-  color: black;
+  color: white;
 }
 
 .foto-artista {
@@ -88,7 +88,7 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid black;
+  border: 5px solid white;
 }
 
 .banner-artista h1 {
@@ -98,7 +98,7 @@ body {
 
 .banner-artista .aka {
   font-style: italic;
-  color: black;
+  color: white;
   font-size: 15px;
 }
 
