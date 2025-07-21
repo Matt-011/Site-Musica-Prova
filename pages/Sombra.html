@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sombra - Yun Li</title>
+    <link rel="stylesheet" href="../css/Ópitica2.css" />
+    <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
+    <script>
+        function trocarCapa() {
+            const capa = document.getElementById("albumCapa");
+            capa.src = capa.src.includes("Sombracover.png") ? "../images/Óptica.png" : "../images/Sombracover.png";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Banner topo -->
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="../images/cd.png" alt="Logo do site">
+        </div>
+        <div class="banner">
+            <h1>Mundo do Rap</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/ajuda.html">Ajuda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Caixa flutuante com vídeo (menor e corrigido) -->
+    <div class="video-fixo">
+        <iframe width="300" height="170"
+            src="https://www.youtube.com/embed/ENmHHlGVAtE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <section class="topo-musica">
+            <img src="../images/Óptica.png" alt="Capa do Álbum" class="capa" id="albumCapa" onclick="trocarCapa()"
+                style="cursor:pointer" />
+            <div class="detalhes">
+                <h1>Sombra</h1>
+                <p><a href="">Yun Li</a></p>
+                <p>Producer: <a href="">Yun Li </a>&<a> Hakuro</a></p>
+                <p>Track 3 on <a href="#final" class="link-final">Óptica ↓</a></p>
+                <p>Jul. 12, 2023</p>
+            </div>
+        </section>
+
+        <section class="letra">
+            <h3>[Verso 1]</h3>
+            <p>
+                Sombras perdem a forma sobrepostas em união
+                Na penumbra, figura se distorce em escuridão
+                E como ela, eu também me perco na avenida
+                Entre a luz e a conhecida imensidão
+                E é nesse momento que eu prezo pelos poucos
+                E os mesmos que me levantam do chão
+            </p>
+
+            <h3>[Refrão]</h3>
+            <p>
+                Eu tô com uma vontade doida de encontrar com a minha sombra
+                E perguntar o que ela sabe sobre nós
+                E se a saudade tomar conta, eu procuro alguma coisa
+                Que vai fazer еu esquecer da minha voz
+            </p>
+
+            <h3>[Verso 2]</h3>
+            <p>
+                Quеm é esse no espelho? Eu não sei quem é
+                Queima os filmes na garagem, 'cê não sabe quem que é
+                Essas fotos são de outro, são de um cara qualquer
+                Não reconheço nem um pouco, cadê o rosto? Quem que é?
+                O retrato se perdeu no flash
+                E agora eu vejo que eu não entendo o que eu penso
+                No velho espelho, eu já não me reconheço mais
+                E todo o tempo que eu passei me remoendo
+                Eu devia ter passado trocando canais
+                Ouvi dizer que a vida é mais que se acredita
+                Tem tanta, tanta coisa tão bonita
+                Enquanto a gente busca outra pessoa
+                A nossa sombra grita e isso ecoa
+                Por isso nada nem ninguém vai tapar o furo que 'cê tem
+                Você mesmo carece de atenção
+                E é essa autoestima que me leva pro caminho
+                Sem sentido, só perdido, sem um chão
+            </p>
+
+            <h3>[Refrão]</h3>
+            <p>
+                Eu tô com uma vontade doida de encontrar com a minha sombra
+                E perguntar o que ela sabe sobre nós
+                E se a saudade tomar conta, eu procuro alguma coisa
+                Que vai fazer eu esquecer da minha voz
+            </p>
+
+            <h3>[Saída]</h3>
+            <p>
+                Então eu deixo que a minha sombra responda tudo que alguém quer de mim
+                E que me encontre um novo rosto onde eu nunca vi
+                E eu só peço que essa onda me leve bem pra longe disso aqui
+                Onde as sombras não me busquem, onde eu possa sorrir
+                Então eu deixo que a minha sombra responda tudo que alguém quer de mim
+                E que me encontre um novo rosto onde eu nunca vi
+                E eu só peço que essa onda me leve bem pra longe disso aqui
+                Onde as sombras não me busquem, onde eu possa sorrir
+            </p>
+        </section>
+
+        <section id="final" class="final-musicas">
+            <h2>Outras Faixas</h2>
+            <div class="lista-musicas">
+                <div>
+                    <ol>
+                        <a href="../pages/Absorver.html">
+                            <li>1. Absorver</li>
+                        </a>
+                        <a href="../pages/Reflexo.html">
+                            <li>2. Reflexo</li>
+                        </a>
+                    </ol>
+                </div>
+                <div>
+                    <ul>
+                        <a href="../pages/Sombra.html">
+                            <li><strong>3. Sombra</strong></li>
+                        </a>
+                        <a href="../pages/Transparência.html">
+                            <li>4. Transparência</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Mundo do Rap — Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

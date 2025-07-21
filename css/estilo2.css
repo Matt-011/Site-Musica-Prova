@@ -109,7 +109,7 @@ main {
   margin: 0 10px;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
@@ -140,7 +140,7 @@ main {
   transform: translateY(-50%);
   font-size: 30px;
   color: #333;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -219,9 +219,9 @@ main {
 
 /* Rodapé */
 .rodape {
-  margin-top: auto;
-  background-color: #ccc;
-  padding: 20px;
   text-align: center;
-  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  background: #111;
+  color: #888;
+  margin-top: 50px;
 }

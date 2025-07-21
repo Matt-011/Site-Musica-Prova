@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  color: rgb(255, 0, 0);
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.album-cover img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.album-info {
+  text-align: center;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.album-info h1 {
+  font-size: 24px;
+  margin: 10px 0 5px;
+}
+
+.album-info p {
+  font-size: 14px;
+  color: #ff0000;
+}
+
+.tracklist {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.tracklist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tracklist li {
+  padding: 15px;
+  border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+.tracklist a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tracklist a:hover {
+  background-color: #eeabab;
+}
+
+.tempo {
+  font-size: 12px;
+  color: #ff0000;
+}
+
+@media screen and (min-height: 400px) {
+  body.scroll .album-cover img,
+  body.scroll .album-info {
+    transform: scale(0.7);
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
