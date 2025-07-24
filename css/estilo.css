@@ -3,136 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  background-color: rgb(161, 212, 241);
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.navbar navbar-expand-lg navbar-dark bg-danger{
+  width: 1351px;
 }
 
-.cabecalho {
-  width: 100%;
-  display: flex;
-  background-color: aqua;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.conteiner-fluid{
+  margin:0 auto;
 }
 
-#logo {
-  width: 20%;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.navbar navbar-expand-lg navbar-dark bg-dark{
+  width: 1351px;
 }
 
-#logo img {
-  border-radius: 50px;
-}
-
-#banner {
-  width: 80%;
-  background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px;
-}
-
-#banner h1 {
-  width: 100%;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  color: rgb(0, 0, 0);
-}
-
-#banner ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: flex-end;
-}
-
-#banner ul li {
-  margin: 0 20px;
-}
-
-#banner ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* SOBRE */
-.sobre {
-  background: white;
-  text-align: center;
-  padding: 20px;
-  margin: 20px;
-  border: 3px solid black;
-}
-
-/* Título da lista */
-.linha2 {
-  text-align: center;
-  background-color: rgb(161, 212, 241);
-  height: 50px;
-  border: 3px solid black;
-  line-height: 50px;
-  font-weight: bold;
-}
-
-/* Conteúdo geral */
-.conteudo {
-  display: flex;
-  flex: 1;
-}
-
-/* Imagens da lateral */
-.lateral {
-  background-color: rgb(70, 177, 238);
-  width: 20%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.lateral img {
-  margin: 20px 0;
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Textos principais */
-.textos {
-  width: 80%;
-  padding: 30px;
-  background-color: rgb(161, 212, 241);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.texto {
-  margin-bottom: 40px;
-}
-
-.texto h3 {
-  margin-bottom: 10px;
-}
-
-/* Rodapé fixado */
-.rodape {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  color: #888;
-  margin-top: 50px;
+.navbar-nav{
+  margin:0 auto;
 }

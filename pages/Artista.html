@@ -2,164 +2,169 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artistas - Mundo do Rap</title>
-  <link rel="stylesheet" href="../css/estilo2.css">
-  <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo do Rap</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo2.css">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <div class="logo">
-      <img src="../images/cd.png" alt="Logo" />
-    </div>
-    <div class="banner">
-      <h1>Mundo do Rap</h1>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/Álbuns.html">Álbuns</a></li>
-        <li><a href="../pages/ajuda.html">Ajuda</a></li>
-      </ul>
-    </div>
-  </header>
 
-  <section class="linha2">
-    <h2>Os Artistas Mais Pesquisados</h2>
-  </section>
+    <!-- HEADER -->
+    <header class="bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="conteiner-fluid">
+                <a class="navbar-brand">
+                    <img src="../images/cd.png" alt="logo" width="70" height="70">
+                    Mundo do Rap
+                </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="navitem">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="pages/Álbuns.html">Álbuns</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link active" href="pages/Artista.html">Artistas</a>
+                    </li>
+                    <li class="navitem">
+                        <a class="nav-link" href="pages/ajuda.html">Ajuda</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <main>
-    <div class="container">
-      <button class="arrow left" onclick="moveLeft()">❮</button>
-      <div class="carousel-wrapper">
-        <div class="carousel" id="carousel">
-          <div class="card">
-            <a href="../pages/KanyeWest.html">
-              <img src="../images/YE.png" alt="Kanye West / Ye" />
-            </a>
-            <div class="card-texto">Kanye West / Ye</div>
-          </div>
-          <div class="card">
-            <a href="../pages/KLAlbuns.html">
-              <img src="../images/kdot.png" alt="Kendrick Lamar" />
-            </a>
-            <div class="card-texto">Kendrick Lamar</div>
-          </div>
-          <div class="card">
-            <a href="../pages/EMIAlbuns.html">
-              <img src="../images/eminem.jpg" alt="Eminem" />
-              <div class="card-texto">Eminem</div>
-            </a>
-          </div>
-          <div class="card">
-            <a href="../pages/TylerTheCreator.html">
-              <img src="../images/tyler.png" alt="Tyler, The Creator" />
-            </a>
-            <div class="card-texto">Tyler, The Creator</div>
-          </div>
-          <div class="card">
-            <a href="../pages/TSAlbuns.html">
-              <img src="../images/travis-scott.jpg" alt="Travis Scott" />
-            </a>
-            <div class="card-texto">Travis Scott</div>
-          </div>
-          <div class="card">
-            <a href="../pages/YUNAlbuns.html">
-              <img src="../images/Yun Li.png" alt="YUNG LIXO / YUN LI" />
-            </a>
-            <div class="card-texto">YUNG LIXO / YUN LI</div>
-          </div>
+    <!-- CARROSSEL DE ARTISTAS -->
+    <section class="carrossel-container">
+        <h5 class="carrossel-titulo">Os Artistas Mais Pesquisados</h5>
+
+        <button class="seta seta-esquerda"
+            onclick="document.getElementById('carrossel').scrollLeft -= 300">&#10094;</button>
+        <button class="seta seta-direita"
+            onclick="document.getElementById('carrossel').scrollLeft += 300">&#10095;</button>
+
+        <div id="carrossel" class="carrossel-wrapper d-flex">
+            <div class="carrossel">
+                <div class="artista-card">
+                    <img src="../images/YE.png" alt="Kanye West">
+                    <p>Kanye West / Ye</p>
+                </div>
+                <div class="artista-card">
+                    <img src="../images/kdot.png" alt="Kendrick Lamar">
+                    <p>Kendrick Lamar</p>
+                </div>
+                <div class="artista-card">
+                    <img src="../images/eminem.jpg" alt="Eminem">
+                    <p>Eminem</p>
+                </div>
+                <div class="artista-card">
+                    <img src="../images/tyler.png" alt="Tyler, The Creator">
+                    <p>Tyler, The Creator</p>
+                </div>
+                <div class="artista-card">
+                    <img src="../images/travis-scott.jpg" alt="Travis Scott">
+                    <p>Travis Scott</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <button class="arrow right" onclick="moveRight()">❯</button>
-    </div>
-    <hr>
+    </section>
 
     <section class="todos-artistas">
-      <div class="cabecalho-artistas">
-        <h2>Todos os Artistas</h2>
-        <input type="text" id="pesquisa" placeholder="Pesquisar artista...">
-      </div>
-
-      <div class="letra-bloco" data-letra="E">
-        <h3>E</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="../pages/EMIAlbuns.html">
-              <img src="../images/eminem.jpg" alt="Eminem" />
-            </a>
-            <p>Eminem</p>
-          </div>
+        <div class="cabecalho-artistas">
+            <h2>Todos os Artistas</h2>
+            <input type="text" id="pesquisa" placeholder="Pesquisar artista...">
         </div>
-      </div>
 
-      <div class="letra-bloco" data-letra="J">
-        <h3>J</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="">
-              <img src="../images/Juice WRLD.jfif" alt="Juice WRLD" />
-            </a>
-            <p>Juice WRLD</p>
-          </div>
+        <div class="letra-bloco" data-letra="E">
+            <h3>E</h3>
+            <div class="artistas-letra">
+                <div class="artista">
+                    <a href="../pages/EMIAlbuns.html">
+                        <img src="../images/eminem.jpg" alt="Eminem" />
+                    </a>
+                    <p>Eminem</p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="letra-bloco" data-letra="K">
-        <h3>K</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="../pages/KanyeWest.html">
-              <img src="../images/YE.png" alt="Kanye West" />
-            </a>
-            <p>Kanye West</p>
-          </div>
-          <div class="artista">
-            <a href="../pages/KLAlbuns.html">
-              <img src="../images/kdot.png" alt="Kendrick Lamar" />
-            </a>
-            <p>Kendrick Lamar</p>
-          </div>
+        <div class="letra-bloco" data-letra="J">
+            <h3>J</h3>
+            <div class="artistas-letra">
+                <div class="artista">
+                    <a href="">
+                        <img src="../images/Juice WRLD.jfif" alt="Juice WRLD" />
+                    </a>
+                    <p>Juice WRLD</p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="letra-bloco" data-letra="T">
-        <h3>T</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="../pages/TSAlbuns.html">
-              <img src="../images/travis-scott.jpg" alt="Travis Scott" />
-            </a>
-            <p>Travis Scott</p>
-          </div>
-          <div class="artista">
-            <a href="../pages/TylerTheCreator.html">
-              <img src="../images/tyler.png" alt="Tyler, The Creator" />
-            </a>
-            <p>Tyler, The Creator</p>
-          </div>
+        <div class="letra-bloco" data-letra="K">
+            <h3>K</h3>
+            <div class="artistas-letra">
+                <div class="artista">
+                    <a href="../pages/KanyeWest.html">
+                        <img src="../images/YE.png" alt="Kanye West" />
+                    </a>
+                    <p>Kanye West</p>
+                </div>
+                <div class="artista">
+                    <a href="../pages/KLAlbuns.html">
+                        <img src="../images/kdot.png" alt="Kendrick Lamar" />
+                    </a>
+                    <p>Kendrick Lamar</p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="letra-bloco" data-letra="Y">
-        <h3>Y</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="../pages/YUNAlbuns.html">
-              <img src="../images/Yun Li.png" alt="YUN LI" />
-            </a>
-            <p>YUN LI</p>
-          </div>
+        <div class="letra-bloco" data-letra="T">
+            <h3>T</h3>
+            <div class="artistas-letra">
+                <div class="artista">
+                    <a href="../pages/TSAlbuns.html">
+                        <img src="../images/travis-scott.jpg" alt="Travis Scott" />
+                    </a>
+                    <p>Travis Scott</p>
+                </div>
+                <div class="artista">
+                    <a href="../pages/TylerTheCreator.html">
+                        <img src="../images/tyler.png" alt="Tyler, The Creator" />
+                    </a>
+                    <p>Tyler, The Creator</p>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="letra-bloco" data-letra="Y">
+            <h3>Y</h3>
+            <div class="artistas-letra">
+                <div class="artista">
+                    <a href="../pages/YUNAlbuns.html">
+                        <img src="../images/Yun Li.png" alt="YUN LI" />
+                    </a>
+                    <p>YUN LI</p>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
+    </main>
 
-  <footer class="rodape">
-    <p>&copy; 2025 - Mundo do Rap</p>
-  </footer>
+    <footer class="rodape">
+        <p>&copy; 2025 - Mundo do Rap</p>
+    </footer>
 
-  <script>
+    <script>
     const carousel = document.getElementById('carousel');
     let scrollPosition = 0;
     const cardWidth = 220;

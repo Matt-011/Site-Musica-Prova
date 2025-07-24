@@ -6,58 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mundo do Rap</title>
   <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
   <link rel="shortcut icon" type="imagex/png" href="./images/cd.png">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <div id="logo">
-      <img src="images/cd.png" alt="Logo" height="80" width="80" />
-    </div>
-    <div id="banner">
-      <h1>Mundo do Rap</h1>
-      <ul>
-        <li><a href="pages/Artista.html">Artistas</a></li>
-        <li><a href="pages/Álbuns.html">Álbuns</a></li>
-        <li><a href="pages/ajuda.html">Ajuda</a></li>
-      </ul>
-    </div>
+  <header class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="conteiner-fluid">
+            <a class="navbar-brand">
+                <img src="images/cd.png" alt="logo" width="70" height="70">
+                Mundo do Rap
+            </a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="navitem">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="navitem">
+                    <a class="nav-link" href="pages/Álbuns.html">Álbuns</a>
+                </li>
+                <li class="navitem">
+                    <a class="nav-link" href="pages/Artista.html">Artistas</a>
+                </li>
+                <li class="navitem">
+                    <a class="nav-link" href="pages/ajuda.html">Ajuda</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
   </header>
-
-  <section class="sobre">
-    <h2>Sobre o Site</h2>
-    <p>Este site apresenta os álbuns e artistas mais influentes do mundo do rap.</p>
-  </section>
-
-  <section class="linha2">
-    <h2>Os Mais Pesquisados</h2>
-  </section>
-
-  <div class="conteudo">
-    <aside class="lateral">
-      <img src="images/My Beful Dark Twisted Fantasy.png" alt="Kanye" />
-      <img src="images/Good_kid,_m.d_city.png" alt="Kendrick" />
-      <img src="images/ASTROWORLD.png" alt="Travis" />
-    </aside>
-    <main class="textos">
-      <div class="texto">
-        <h3>My Beautiful Dark Twisted Fantasy – Kanye West</h3>
-        <p>“My Beautiful Dark Twisted Fantasy” é amplamente considerado a obra-prima de Kanye West.</p>
-      </div>
-      <div class="texto">
-        <h3>Good Kid, M.A.A.D City – Kendrick Lamar</h3>
-        <p>Este álbum é uma narrativa densa e cinematográfica da juventude de Kendrick Lamar.</p>
-      </div>
-      <div class="texto">
-        <h3>ASTROWORLD – Travis Scott</h3>
-        <p>“ASTROWORLD” é uma experiência sonora psicodélica e espacial que solidificou Travis Scott.</p>
-      </div>
-    </main>
-  </div>
-
-  <footer class="rodape">
-    <p>&copy; 2025 - Mundo do Rap</p>
-  </footer>
 </body>
 
 </html>
