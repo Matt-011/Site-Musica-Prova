@@ -1,143 +1,167 @@
+header {
+    justify-content: space-between;
+}
+
 .navbar navbar-expand-lg navbar-dark bg-danger {
-            width: 1351px;
-        }
+    width: 1351px;
+}
 
-        .conteiner-fluid {
-            margin: 0 auto;
-        }
+.form-inline {
+    display: flex;
+}
 
-        .navbar navbar-expand-lg navbar-dark bg-dark {
-            width: 1351px;
-        }
+.pesquisa {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
 
-        .navbar-nav {
-            margin: 0 auto;
-        }
+.pesquisa input[type="text"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
 
-        .carrossel-container {
-            position: relative;
-            overflow: hidden;
-            padding: 20px;
-            background-color: #e9f0ec;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
-        }
+.pesquisa button {
+    padding: 6px 12px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-        .carrossel-titulo {
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+.pesquisa button:hover {
+    background-color: #ddd;
+}
 
-        .carrossel {
-            display: flex;
-            gap: 15px;
-            transition: transform 0.5s ease;
-        }
+.carrossel-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #e9f0ec;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
-        .artista-card {
-            min-width: 180px;
-            flex: 0 0 auto;
-            text-align: center;
-        }
+.carrossel-titulo {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-        .artista-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+.carrossel {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.5s ease;
+}
 
-        .seta {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.7);
-            border: none;
-            color: white;
-            font-size: 24px;
-            padding: 8px 12px;
-            cursor: pointer;
-            z-index: 1;
-            border-radius: 50%;
-        }
+.artista-card {
+    min-width: 180px;
+    flex: 0 0 auto;
+    text-align: center;
+}
 
-        .seta-esquerda {
-            left: 10px;
-        }
+.artista-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
-        .seta-direita {
-            right: 10px;
-        }
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
 
-        .carrossel-wrapper {
-            overflow-x: auto;
-            scroll-behavior: smooth;
-        }
+.seta-esquerda {
+    left: 10px;
+}
 
-        .carrossel-wrapper::-webkit-scrollbar {
-            display: none;
-        }
+.seta-direita {
+    right: 10px;
+}
 
-        .todos-artistas {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+.carrossel-wrapper {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
 
-        .cabecalho-artistas {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+.carrossel-wrapper::-webkit-scrollbar {
+    display: none;
+}
 
-        .cabecalho-artistas input {
-            padding: 8px;
-            width: 200px;
-        }
+.todos-artistas {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-        .letra-bloco {
-            margin-bottom: 30px;
-        }
+.cabecalho-artistas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-        .letra-bloco h3 {
-            border-bottom: 2px solid #000;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
+.cabecalho-artistas input {
+    padding: 8px;
+    width: 200px;
+}
 
-        .artistas-letra {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+.letra-bloco {
+    margin-bottom: 30px;
+}
 
-        .artista {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 150px;
-        }
+.letra-bloco h3 {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
 
-        .artista img {
-            width: 100px;
-            height: 100px;
-            border-radius: 10px;
-            object-fit: cover;
-            border: 2px solid black;
-            margin-bottom: 8px;
-        }
+.artistas-letra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-        .artista p {
-            font-weight: bold;
-        }
+.artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
 
-        /* Rodapé */
-        .rodape {
-            text-align: center;
-            padding: 20px;
-            background: #111;
-            color: #888;
-            margin-top: 50px;
-        }
+.artista img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid black;
+    margin-bottom: 8px;
+}
+
+.artista p {
+    font-weight: bold;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #888;
+    margin-top: 50px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resultado da Pesquisa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #111;
+    }
+
+    .artista {
+      margin: 10px 0;
+      padding: 12px;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-size: 18px;
+    }
+
+    .artista a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .artista a:hover {
+      color: #d00;
+    }
+
+    .nenhum-resultado {
+      color: #b00;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Resultado da Pesquisa</h1>
+  <div id="resultado"></div>
+
+  <script>
+    // Lista de artistas com links correspondentes
+    const artistas = [
+      { nome: "Kanye West", link: "../pages/KanyeWest.html" },
+      { nome: "Kendrick Lamar", link: "artistas/kendrick-lamar.html" },
+      { nome: "Eminem", link: "artistas/eminem.html" },
+      { nome: "Tyler, The Creator", link: "../pages/TylerTheCreator.html" },
+      { nome: "YUN LI", link: "artistas/yun-li.html" },
+      { nome: "Travis Scott", link: "artistas/travis-scott.html" }
+    ];
+
+    // Obter o parâmetro de busca
+    const params = new URLSearchParams(window.location.search);
+    const termo = params.get("q")?.toLowerCase() || "";
+
+    const container = document.getElementById("resultado");
+
+    // Filtrar artistas que contêm o termo pesquisado
+    const encontrados = artistas.filter(artista =>
+      artista.nome.toLowerCase().includes(termo)
+    );
+
+    if (termo === "") {
+      container.innerHTML = "<p class='nenhum-resultado'>Nenhum termo pesquisado.</p>";
+    } else if (encontrados.length > 0) {
+      encontrados.forEach(artista => {
+        const div = document.createElement("div");
+        div.className = "artista";
+
+        const link = document.createElement("a");
+        link.href = artista.link;
+        link.textContent = artista.nome;
+
+        div.appendChild(link);
+        container.appendChild(div);
+      });
+    } else {
+      container.innerHTML = `<p class="nenhum-resultado">Nenhum artista encontrado com "${termo}".</p>`;
+    }
+  </script>
+
+</body>
+</html>

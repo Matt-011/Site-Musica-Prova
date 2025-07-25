@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DON'T TAP THE GLASS - Mundo do Rap</title>
-  <link rel="stylesheet" href="../css/DON'TTAPTHEGLASS.css">
-  <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
-</head>
-<body>
-  <div class="album-container">
-    <div class="album-cover">
-      <img src="../images/DON'T TAP THE GLASS.png" alt="DON'T TAP THE GLASS" />
-    </div>
-    <div class="album-info">
-      <h1>DON'T TAP THE GLASS</h1>
-      <p>Tyler, The Creator • 21/07/2025 • 10 Tracks • 28min 30s</p><br>
-    </div>
 
-    <div class="tracklist">
-      <ul>
-        <li><a href="">1. Big Poe <span class="tempo">3:02</span></a></li>
-        <li><a href="">2. Sugar On My Tongue <span class="tempo">2:33</span></a></li>
-        <li><a href="">3. Sucka Free <span class="tempo">2:41</span></a></li>
-        <li><a href="">4. Mommanem <span class="tempo">1:15</span></a></li>
-        <li><a href="">5. Stop Playing With Me <span class="tempo">2:13</span></a></li>
-        <li><a href="">6. Ring Ring Ring <span class="tempo">3:21</span></a></li>
-        <li><a href="">7. Don't Tap The Glass/Tweakin' <span class="tempo">3:42</span></a></li>
-        <li><a href="">8. Don't You Worry Baby <span class="tempo">2:58</span></a></li>
-        <li><a href="">9. I'll Take Care Of You <span class="tempo">3:20</span></a></li>
-        <li><a href="">10. Tell Me What It Is  <span class="tempo">3:22</span></a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+  <link rel="stylesheet" href="../css/DON'TTAPTHEGLASS.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="conteiner-fluid">
+        <a class="navbar-brand">
+          <img src="../images/cd.png" alt="logo" width="40" height="40">
+          Mundo do Rap
+        </a>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="navitem">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pesquisa">
+        <form action="../pages/resultado.html" method="GET">
+          <input type="text" name="q" placeholder="Pesquisar artista..." required>
+          <button type="submit">Buscar</button>
+        </form>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="album-container">
+      <div class="album-cover">
+        <img src="../images/DON'T TAP THE GLASS.png" alt="DON'T TAP THE GLASS" />
+      </div>
+      <div class="album-info">
+        <h1>DON'T TAP THE GLASS</h1>
+        <p>Tyler, The Creator • 21/07/2025 • 10 Tracks • 28min 30s</p><br>
+      </div>
+
+      <div class="tracklist">
+        <ul>
+          <li><a href="">1. Big Poe <span class="tempo">3:02</span></a></li>
+          <li><a href="">2. Sugar On My Tongue <span class="tempo">2:33</span></a></li>
+          <li><a href="">3. Sucka Free <span class="tempo">2:41</span></a></li>
+          <li><a href="">4. Mommanem <span class="tempo">1:15</span></a></li>
+          <li><a href="">5. Stop Playing With Me <span class="tempo">2:13</span></a></li>
+          <li><a href="">6. Ring Ring Ring <span class="tempo">3:21</span></a></li>
+          <li><a href="">7. Don't Tap The Glass/Tweakin' <span class="tempo">3:42</span></a></li>
+          <li><a href="">8. Don't You Worry Baby <span class="tempo">2:58</span></a></li>
+          <li><a href="">9. I'll Take Care Of You <span class="tempo">3:20</span></a></li>
+          <li><a href="">10. Tell Me What It Is <span class="tempo">3:22</span></a></li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </main>
+
+  <script src="../plugins/bootstrap/js/bootstrap.js">
+    document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede o envio tradicional do formulário
+      const termo = document.getElementById('campoPesquisa').value.trim();
+      if (termo) {
+        // Redireciona com o termo como parâmetro na URL
+        window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+      }
+    });
+  </script>
 </body>
+
 </html>

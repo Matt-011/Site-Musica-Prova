@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mundo do Rap</title>
+    <title>Artistas - Mundo do Rap</title>
     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo2.css">
 </head>
@@ -16,31 +16,37 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
             <div class="conteiner-fluid">
                 <a class="navbar-brand">
-                    <img src="../images/cd.png" alt="logo" width="70" height="70">
+                    <img src="../images/cd.png" alt="logo" width="40" height="40">
                     Mundo do Rap
                 </a>
             </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav">
-                    <li class="navitem">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="navitem">
-                        <a class="nav-link" href="pages/Álbuns.html">Álbuns</a>
-                    </li>
-                    <li class="navitem">
-                        <a class="nav-link active" href="pages/Artista.html">Artistas</a>
-                    </li>
-                    <li class="navitem">
-                        <a class="nav-link" href="pages/ajuda.html">Ajuda</a>
-                    </li>
-                </ul>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="navitem">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link active" href="../pages/Artista.html">Artistas</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pesquisa">
+                <form action="pages/resultado.html" method="GET">
+                    <input type="text" name="q" placeholder="Pesquisar artista..." required>
+                    <button type="submit">Buscar</button>
+                </form>
             </div>
         </nav>
     </header>
@@ -80,6 +86,7 @@
         </div>
     </section>
 
+    <!--TODOS OS ARTISTAS-->
     <section class="todos-artistas">
         <div class="cabecalho-artistas">
             <h2>Todos os Artistas</h2>
@@ -164,42 +171,43 @@
         <p>&copy; 2025 - Mundo do Rap</p>
     </footer>
 
+    <script src="../plugins/bootstrap/js/bootstrap.js">
+        const carousel = document.getElementById('carousel');
+        let scrollPosition = 0;
+        const cardWidth = 220;
+
+        function moveLeft() {
+            scrollPosition -= cardWidth;
+            if (scrollPosition < 0) scrollPosition = 0;
+            carousel.style.transform = `translateX(-${scrollPosition}px)`;
+        }
+
+        function moveRight() {
+            const maxScroll = carousel.scrollWidth - carousel.offsetWidth;
+            scrollPosition += cardWidth;
+            if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+            carousel.style.transform = `translateX(-${scrollPosition}px)`;
+        }
+    </script>
     <script>
-    const carousel = document.getElementById('carousel');
-    let scrollPosition = 0;
-    const cardWidth = 220;
-
-    function moveLeft() {
-      scrollPosition -= cardWidth;
-      if (scrollPosition < 0) scrollPosition = 0;
-      carousel.style.transform = `translateX(-${scrollPosition}px)`;
-    }
-
-    function moveRight() {
-      const maxScroll = carousel.scrollWidth - carousel.offsetWidth;
-      scrollPosition += cardWidth;
-      if (scrollPosition > maxScroll) scrollPosition = maxScroll;
-      carousel.style.transform = `translateX(-${scrollPosition}px)`;
-    }
-
-    const input = document.getElementById('pesquisa');
-    input.addEventListener('input', () => {
-      const termo = input.value.toLowerCase();
-      document.querySelectorAll('.letra-bloco').forEach(bloco => {
-        let visivel = false;
-        bloco.querySelectorAll('.artista').forEach(artista => {
-          const nome = artista.querySelector('p').textContent.toLowerCase();
-          if (nome.includes(termo)) {
-            artista.style.display = 'flex';
-            visivel = true;
-          } else {
-            artista.style.display = 'none';
-          }
+        const input = document.getElementById('pesquisa');
+        input.addEventListener('input', () => {
+            const termo = input.value.toLowerCase();
+            document.querySelectorAll('.letra-bloco').forEach(bloco => {
+                let visivel = false;
+                bloco.querySelectorAll('.artista').forEach(artista => {
+                    const nome = artista.querySelector('p').textContent.toLowerCase();
+                    if (nome.includes(termo)) {
+                        artista.style.display = 'flex';
+                        visivel = true;
+                    } else {
+                        artista.style.display = 'none';
+                    }
+                });
+                bloco.style.display = visivel ? 'block' : 'none';
+            });
         });
-        bloco.style.display = visivel ? 'block' : 'none';
-      });
-    });
-  </script>
+    </script>
 </body>
 
 </html>

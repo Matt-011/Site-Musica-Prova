@@ -14,62 +14,20 @@ body {
 }
 
 /* Cabeçalho com logo e menu */
-.cabecalho {
-  display: flex;
-  width: 100%;
-  background-color: aqua;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.navbar navbar-expand-lg navbar-dark bg-danger{
+  width: 1351px;
 }
 
-.logo {
-  width: 20%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.conteiner-fluid{
+  margin:0 auto;
 }
 
-.logo img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.navbar navbar-expand-lg navbar-dark bg-dark{
+  width: 1351px;
 }
 
-.banner {
-  width: 80%;
-  background-color: red;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.banner h1 {
-  width: 100%;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-}
-
-.banner ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: flex-end;
-  padding-right: 20px;
-}
-
-.banner ul li {
-  margin: 0 20px;
-}
-
-.banner ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.navbar-nav{
+  margin:0 auto;
 }
 
 /* Banner com imagem do artista */
@@ -173,9 +131,9 @@ body {
 
 /* Rodapé */
 .rodape {
-  margin-top: auto;
-  background-color: #ccc;
-  padding: 20px;
   text-align: center;
-  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  background: #111;
+  color: #888;
+  margin-top: 50px;
 }

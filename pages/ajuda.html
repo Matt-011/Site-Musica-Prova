@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajuda - Mundo do Rap</title>
   <link rel="stylesheet" href="../css/ajuda.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
   <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
 </head>
+
 <body>
-  <header class="cabecalho">
-    <div class="logo">
-      <img src="../images/cd.png" alt="Logo do site">
-    </div>
-    <div class="banner">
-      <h1>Mundo do Rap</h1>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../pages/Artista.html">Artistas</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="conteiner-fluid">
+        <a class="navbar-brand">
+          <img src="../images/cd.png" alt="logo" width="40" height="40">
+          Mundo do Rap
+        </a>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="navitem">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link active" href="../pages/ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pesquisa">
+        <form action="pages/resultado.html" method="GET">
+          <input type="text" name="q" placeholder="Pesquisar artista..." required>
+          <button type="submit">Buscar</button>
+        </form>
+
+      </div>
+    </nav>
+
   </header>
 
   <main class="conteudo">
     <h2>Bem-vindo à Página de Ajuda</h2>
-    <p>Este site foi criado para todos os fãs de RAP! Aqui, você pode explorar álbuns marcantes, conhecer artistas icônicos, ouvir suas músicas favoritas ou descobrir novos sons.</p>
+    <p>Este site foi criado para todos os fãs de RAP! Aqui, você pode explorar álbuns marcantes, conhecer artistas
+      icônicos, ouvir suas músicas favoritas ou descobrir novos sons.</p>
 
     <h3>Como funciona?</h3>
     <ul>
@@ -35,15 +65,23 @@
     </ul>
 
     <h3>Atualizações</h3>
-    <p>Estamos trabalhando constantemente para melhorar o site. Em breve, você verá novos artistas, mais álbuns e funcionalidades como playlists e rankings.</p>
+    <p>Estamos trabalhando constantemente para melhorar o site. Em breve, você verá novos artistas, mais álbuns e
+      funcionalidades como playlists e rankings.</p>
 
-    <p><strong>⚠️ O site ainda está em desenvolvimento.</strong> Algumas páginas ou links podem não funcionar corretamente por enquanto.</p>
+    <p><strong>⚠️ O site ainda está em desenvolvimento.</strong> Algumas páginas ou links podem não funcionar
+      corretamente por enquanto.</p>
 
-    <p>Seja bem-vindo(a) ao <strong>Mundo do Rap</strong> — um espaço para curtir, explorar e relembrar os grandes clássicos do gênero! 🎧</p>
+    <p>Seja bem-vindo(a) ao <strong>Mundo do Rap</strong> — um espaço para curtir, explorar e relembrar os grandes
+      clássicos do gênero! 🎧</p>
   </main>
 
   <footer class="rodape">
     <p>&copy; 2025 - Mundo do Rap</p>
   </footer>
+
+  <script src="plugins/bootstrap/js/bootstrap.js">
+
+  </script>
 </body>
+
 </html>

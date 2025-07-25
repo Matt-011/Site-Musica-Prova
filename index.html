@@ -2,46 +2,175 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mundo do Rap</title>
-  <link rel="stylesheet" href="css/estilo.css" />
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-  <link rel="shortcut icon" type="imagex/png" href="./images/cd.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo do Rap</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="./images/cd.png">
 </head>
 
 <body>
-  <header class="bg-secondary">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-        <div class="conteiner-fluid">
-            <a class="navbar-brand">
-                <img src="images/cd.png" alt="logo" width="70" height="70">
-                Mundo do Rap
-            </a>
+    <header class="bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="conteiner-fluid">
+                <a class="navbar-brand">
+                    <img src="images/cd.png" alt="logo" width="40" height="40">
+                    Mundo do Rap
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="navitem">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="pages/Álbuns.html">Álbuns</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="pages/Artista.html">Artistas</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="pages/ajuda.html">Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pesquisa">
+                <form action="pages/resultado.html" method="GET">
+                    <input type="text" name="q" placeholder="Pesquisar artista..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="lancamentos">
+        <h2>Lançamentos Recentes</h2>
+        <div class="lancamentos-container">
+            <div class="card-lancamento">
+                <img src="images/DON'T TAP THE GLASS.png" alt="Capa do álbum 1">
+                <div class="info">
+                    <h3>DON'T TAP THE GLASS</h3>
+                    <p>Tyler, The Creator</p>
+                    <a href="https://open.spotify.com/intl-pt/album/1jzv3jwZbt8lYfEtMjiD1R" class="btn-ouvir">Ouvir
+                        agora</a>
+                </div>
+            </div>
+            <div class="card-lancamento">
+                <img src="images/JACKBOYS 2.png" alt="Capa do álbum 2">
+                <div class="info">
+                    <h3>JACKBOYS 2</h3>
+                    <p>Travis Scott & JACKBOYS</p>
+                    <a href="https://open.spotify.com/album/1Fj25TwO1GL490NL5cFVnb" class="btn-ouvir">Ouvir agora</a>
+                </div>
+            </div>
+            <div class="card-lancamento">
+                <img src="images/Óptica.png" alt="Capa do álbum 3">
+                <div class="info">
+                    <h3>Óptica</h3>
+                    <p>YUN LI</p>
+                    <a href="#" class="btn-ouvir">Ouvir agora</a>
+                </div>
+            </div>
+            <!-- Adicione mais cards se quiser -->
         </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav">
-                <li class="navitem">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="navitem">
-                    <a class="nav-link" href="pages/Álbuns.html">Álbuns</a>
-                </li>
-                <li class="navitem">
-                    <a class="nav-link" href="pages/Artista.html">Artistas</a>
-                </li>
-                <li class="navitem">
-                    <a class="nav-link" href="pages/ajuda.html">Ajuda</a>
-                </li>
-            </ul>
+    </section>
+    <section class="proximos-lancamentos">
+        <h2>Próximos Lançamentos</h2>
+
+        <div class="cards-container">
+
+            <!-- Álbum 1 -->
+            <div class="card-lancamento2" data-lancamento="2025-09-26T00:00:00">
+                <img src="images/bully.png" alt="Álbum 1">
+                <div class="info-lancamento">
+                    <h3>BULLY - YE</h3>
+                    <p class="contador">Carregando...</p>
+                    <button onclick="serNotificado(this)">Ser notificado</button>
+                </div>
+            </div>
+
+            <!-- Álbum 2 -->
+            <div class="card-lancamento2" data-lancamento="2025-12-31T00:00:00">
+                <img src="images/Iceman.png" alt="Álbum 1">
+                <div class="info-lancamento">
+                    <h3>ICEMAN - DRAKE</h3>
+                    <p class="contador">Carregando...</p>
+                    <button onclick="serNotificado(this)">Ser notificado</button>
+                </div>
+            </div>
+
+            <!-- Álbum 3 -->
+            <div class="card-lancamento2" data-lancamento="2025-09-12T00:00:00">
+                <img src="images/Tycoon.png" alt="Álbum 1">
+                <div class="info-lancamento">
+                    <h3>TYCOON - TY DOLLA $IGN</h3>
+                    <p class="contador">Carregando...</p>
+                    <button onclick="serNotificado(this)">Ser notificado</button>
+                </div>
+            </div>
+
         </div>
-    </nav>
-  </header>
+    </section>
+
+
+
+    <script src="plugins/bootstrap/js/bootstrap.js">
+        document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede o envio tradicional do formulário
+            const termo = document.getElementById('campoPesquisa').value.trim();
+            if (termo) {
+                // Redireciona com o termo como parâmetro na URL
+                window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+            }
+        });
+    </script>
+    <script>
+  function atualizarContadores() {
+    const cards = document.querySelectorAll('.card-lancamento2');
+
+    cards.forEach(card => {
+      const data = new Date(card.dataset.lancamento);
+      const agora = new Date();
+      const diff = data - agora;
+
+      const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diff / (1000 * 60)) % 60);
+      const segundos = Math.floor((diff / 1000) % 60);
+
+      const contador = card.querySelector(".contador");
+
+      if (diff > 0) {
+        contador.textContent = `Faltam ${dias}d ${horas}h ${minutos}m ${segundos}s`;
+      } else {
+        contador.textContent = "Já foi lançado!";
+      }
+    });
+  }
+
+  function serNotificado(botao) {
+    botao.textContent = "✅ Você será notificado!";
+    botao.disabled = true;
+  }
+
+  // Atualiza a cada segundo
+  document.addEventListener("DOMContentLoaded", function () {
+    atualizarContadores();
+    setInterval(atualizarContadores, 1000);
+  });
+</script>
+
+
+
 </body>
 
 </html>
