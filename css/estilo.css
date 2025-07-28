@@ -112,54 +112,57 @@ header{
   background-color: #e63b3b;
 }
 
-.proximos-lancamentos {
-  padding: 2rem;
-  background-color: #111;
-}
-
-.proximos-lancamentos h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+.lancamentos-container {
   display: flex;
-  color: #ff4444;
+  justify-content: center;
+  gap: 20px; /* Diminui o espaçamento entre os cards */
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .card-lancamento2 {
-  display: flex;
-  gap: 1rem;
-  background-color: white;
-  padding: 1rem;
+  background-color: #000;
+  color: white;
+  width: 220px; /* Um pouco menor que antes */
   border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  margin: auto;
-  align-items: center;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.card-lancamento2:hover {
+  transform: translateY(-5px);
 }
 
 .card-lancamento2 img {
-  width: 150px;
-  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ff4d4d;
 }
 
-.info-lancamento h3 {
-  margin: 0;
+.card-lancamento2 .info {
+  padding: 10px;
 }
 
-.info-lancamento p {
-  margin: 0.3rem 0;
-}
-
-.info-lancamento button {
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #e60000;
+.card-lancamento2 .btn-ouvir {
+  margin-top: 10px;
+  background-color: #ff4d4d;
   color: white;
   border: none;
+  padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: bold;
 }
 
-.info-lancamento button:hover {
-  background-color: #cc0000;
+.card-lancamento2 .btn-ouvir:disabled {
+  background-color: #2ecc71;
+}
+
+  .proximos-lancamentos {
+  background-color: #111;
+  padding-top: 50px;
+  padding-bottom: 60px;
 }
