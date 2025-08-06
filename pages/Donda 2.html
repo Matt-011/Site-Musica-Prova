@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DONDA 2 - Mundo do Rap</title>
+  <title>DONDA 2 (DIGITAL) - Mundo do Rap</title>
   <link rel="stylesheet" href="../css/Donda 2.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
   <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
 </head>
+
 <body>
+  <header class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="conteiner-fluid">
+        <a class="navbar-brand">
+          <img src="../images/cd.png" alt="logo" width="40" height="40">
+          Mundo do Rap
+        </a>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="navitem">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pesquisa">
+        <form action="../pages/resultado.html" method="GET">
+          <input type="text" name="q" placeholder="Pesquisar artista..." required>
+          <button type="submit">Buscar</button>
+        </form>
+
+      </div>
+    </nav>
+  </header>
+
   <div class="album-container">
     <div class="album-cover">
       <img src="../images/Donda_2_by_Kanye_West.png" alt="DONDA 2" />
     </div>
     <div class="album-info">
-      <h1>DONDA 2</h1>
+      <h1>DONDA 2 (DIGITAL)</h1>
       <p>YE • 06/06/2025 • 21 Tracks • 58min</p><br>
       <p>Tracklist:</p>
     </div>
@@ -43,5 +86,20 @@
         <li><a href="#">21. FIRST TIME IN A LONG TIME <span class="tempo">3:08</span></a></li>
       </ul>
     </div>
+
+    <footer class="rodape">
+      <p>&copy; 2025 - Mundo do Rap</p>
+    </footer>
+    <script src="../plugins/bootstrap/js/bootstrap.js">
+      document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+        e.preventDefault(); // Impede o envio tradicional do formulário
+        const termo = document.getElementById('campoPesquisa').value.trim();
+        if (termo) {
+          // Redireciona com o termo como parâmetro na URL
+          window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+        }
+      });
+    </script>
 </body>
+
 </html>
