@@ -6,10 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jesus Is King - Mundo do Rap</title>
   <link rel="stylesheet" href="../css/JesusIsKing.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
   <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
 </head>
 
 <body>
+  <header class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="conteiner-fluid">
+        <a class="navbar-brand">
+          <img src="../images/cd.png" alt="logo" width="40" height="40">
+          Mundo do Rap
+        </a>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="navitem">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pesquisa">
+        <form action="../pages/resultado.html" method="GET">
+          <input type="text" name="q" placeholder="Pesquisar artista..." required>
+          <button type="submit">Buscar</button>
+        </form>
+
+      </div>
+    </nav>
+  </header>
   <div class="album-container">
     <div class="album-cover">
       <img src="../images/jesus-is-king-1920x1920.png" alt="Jesus Is King" />
@@ -22,20 +62,55 @@
 
     <div class="tracklist">
       <ul>
-        <li><a href="https://www.youtube.com/watch?v=T58tRXzjC7c&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=2">1. Every Hour <span class="tempo">1:52</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=6CNPg2IQoC0&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=2">2. Selah <span class="tempo">2:44</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=ivCY3Ec4iaU&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=3">3. Follow God <span class="tempo">1:44</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=MKM90u7pf3U&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=4">4. Closed On Sunday <span class="tempo">2:31</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=AOBQkHy8_p8&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=5">5. On God <span class="tempo">2:16</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=Mrfu0FBB110&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=6">6. Everything We Need <span class="tempo">1:56</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=-YfG1Xbo4OA&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=7">7. Water <span class="tempo">2:48</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=G8u3P7Xqlvo&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=8">8. God Is <span class="tempo">3:23</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=dojATOk1GHA&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=9">9. Hands On <span class="tempo">3:23</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=8yQVcGkbpAc&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=10">10. Use This Gospel <span class="tempo">3:33</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=rns_n82HiMo&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=11">11. Jesus Is Lord <span class="tempo">0:49</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=T58tRXzjC7c&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=2">1.
+            Every Hour <span class="tempo">1:52</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=6CNPg2IQoC0&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=2">2.
+            Selah <span class="tempo">2:44</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=ivCY3Ec4iaU&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=3">3.
+            Follow God <span class="tempo">1:44</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=MKM90u7pf3U&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=4">4.
+            Closed On Sunday <span class="tempo">2:31</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=AOBQkHy8_p8&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=5">5.
+            On God <span class="tempo">2:16</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=Mrfu0FBB110&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=6">6.
+            Everything We Need <span class="tempo">1:56</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=-YfG1Xbo4OA&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=7">7.
+            Water <span class="tempo">2:48</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=G8u3P7Xqlvo&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=8">8.
+            God Is <span class="tempo">3:23</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=dojATOk1GHA&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=9">9.
+            Hands On <span class="tempo">3:23</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=8yQVcGkbpAc&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=10">10.
+            Use This Gospel <span class="tempo">3:33</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=rns_n82HiMo&list=OLAK5uy_nG0R7GxWTXwhsxxi_cwx8QwZe0QI1tED8&index=11">11.
+            Jesus Is Lord <span class="tempo">0:49</span></a></li>
       </ul>
     </div>
   </div>
+  <footer class="rodape">
+    <p>&copy; 2025 - Mundo do Rap</p>
+  </footer>
+  <script src="../plugins/bootstrap/js/bootstrap.js">
+    document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede o envio tradicional do formulário
+      const termo = document.getElementById('campoPesquisa').value.trim();
+      if (termo) {
+        // Redireciona com o termo como parâmetro na URL
+        window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+      }
+    });
+  </script>
 </body>
 
 </html>

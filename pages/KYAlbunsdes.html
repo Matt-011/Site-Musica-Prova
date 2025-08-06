@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanye West Álbuns - Mundo do Rap</title>
+    <link rel="stylesheet" href="../css/estilo3.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
+</head>
+
+<body>
+    <header class="bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="conteiner-fluid">
+                <a class="navbar-brand">
+                    <img src="../images/cd.png" alt="logo" width="40" height="40">
+                    Mundo do Rap
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="navitem">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pesquisa">
+                <form action="../pages/resultado.html" method="GET">
+                    <input type="text" name="q" placeholder="Pesquisar artista..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="pagina-albuns">
+        <div class="lista-albuns">
+
+            <!-- IN A PERFECT WORLD -->
+            <div class="album">
+                <a href="">
+                    <img src="../images/capas em branco.png" alt="Capa do Álbum IAPW">
+                </a>
+                <div class="linha-album">
+                    <div class="descricao">
+                        <p><strong>IN A PERFECT WORLD / CUCK / WW3 | TBA:</strong></p>
+                        <p>O álbum <strong>IN A PERFECT WORLD (Nome atual)</strong>, de Ye, </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- CartiYe -->
+            <div class="album">
+                <a href="">
+                    <img src="../images/capas em branco.png" alt="Capa do Álbum CartiYe">
+                </a>
+                <div class="linha-album">
+                    <div class="descricao">
+                        <p><strong>CartiYe | 2025:</strong></p>
+                        <p>O álbum <strong>CartiYe</strong>, de Ye & Playboi Carti, foi vazado na ERA BULLY mas logo descartado, por conta de briga entre os artistas</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Voltures 3 -->
+            <div class="album">
+                <img src="../images/capas em branco.png" alt="Capa do Álbum Voltures 3">
+                <div class="linha-album">
+                    <div class="descricao">
+                        <p><strong>VOLTURES 3 | 202?:</strong></p>
+                        <p>O álbum <strong>VOLTURES 3</strong>, de ¥$
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Donda 3 -->
+            <div class="album">
+                <img src="../images/capas em branco.png" alt="Capa do Álbum Donda 3">
+                <div class="linha-album">
+                    <div class="descricao">
+                        <p><strong>DONDA 3 | 202?:</strong></p>
+                        <p>O álbum <strong>DONDA 3</strong>, de Ye , </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 - Mundo do Rap</p>
+    </footer>
+    <script src="../plugins/bootstrap/js/bootstrap.js">
+        document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede o envio tradicional do formulário
+            const termo = document.getElementById('campoPesquisa').value.trim();
+            if (termo) {
+                // Redireciona com o termo como parâmetro na URL
+                window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+            }
+        });
+    </script>
+</body>
+
+</html>

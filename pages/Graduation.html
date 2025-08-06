@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Graduation - Mundo do Rap</title>
   <link rel="stylesheet" href="../css/Graduation.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
   <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
 </head>
+
 <body>
+  <header class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="conteiner-fluid">
+        <a class="navbar-brand">
+          <img src="../images/cd.png" alt="logo" width="40" height="40">
+          Mundo do Rap
+        </a>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="navitem">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pesquisa">
+        <form action="../pages/resultado.html" method="GET">
+          <input type="text" name="q" placeholder="Pesquisar artista..." required>
+          <button type="submit">Buscar</button>
+        </form>
+
+      </div>
+    </nav>
+  </header>
+
   <div class="album-container">
     <div class="album-cover">
       <img src="../images/Graduation.png" alt="Graduation" />
@@ -25,15 +68,24 @@
         <li><a href="../pages/Stronger.html">3. Stronger <span class="tempo">5:11</span></a></li>
         <li><a href="../pages/IWonder.html">4. I Wonder <span class="tempo">4:03</span></a></li>
         <li><a href="../pages/GoodLife.html">5. Good Life ft. T-Pain <span class="tempo">3:27</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=hqvcww4ydh8&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=6">6. Can't Tell Me Nothing <span class="tempo">4:31</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=LYa5q2AjWNQ&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=7">7. Barry Bonds ft. Lil Wayne <span class="tempo">3:24</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=9uOg6LyIAUo&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=8">8. Drunk and Hot Girls <span class="tempo">5:13</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=cxKs2b5lRsA&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=9">9. Flashing Lights <span class="tempo">3:57</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=ZtkNfC5Oymw&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=10">10. Everything I Am <span class="tempo">3:47</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=e-IAGmTuUmw&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=11">11. The Glory <span class="tempo">3:32</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=YOzAdMs5dEc&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=12">12. Homecoming <span class="tempo">3:23</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=HInIGGXhJHs&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=13">13. Big Brother <span class="tempo">4:47</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=_J-OaFVdTKE&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=14">14. Good Night <span class="tempo">3:05</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=hqvcww4ydh8&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=6">6.
+            Can't Tell Me Nothing <span class="tempo">4:31</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=LYa5q2AjWNQ&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=7">7.
+            Barry Bonds ft. Lil Wayne <span class="tempo">3:24</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=9uOg6LyIAUo&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=8">8.
+            Drunk and Hot Girls <span class="tempo">5:13</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=cxKs2b5lRsA&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=9">9.
+            Flashing Lights <span class="tempo">3:57</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=ZtkNfC5Oymw&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=10">10.
+            Everything I Am <span class="tempo">3:47</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=e-IAGmTuUmw&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=11">11.
+            The Glory <span class="tempo">3:32</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=YOzAdMs5dEc&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=12">12.
+            Homecoming <span class="tempo">3:23</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=HInIGGXhJHs&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=13">13.
+            Big Brother <span class="tempo">4:47</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=_J-OaFVdTKE&list=PLAUxsgLNM2BuOcW0Bpp-nGT1oyrbfC7b1&index=14">14.
+            Good Night <span class="tempo">3:05</span></a></li>
       </ul>
     </div>
     <div class="album-info">
@@ -45,5 +97,19 @@
       </ul>
     </div>
   </div>
+  <footer class="rodape">
+    <p>&copy; 2025 - Mundo do Rap</p>
+  </footer>
+  <script src="../plugins/bootstrap/js/bootstrap.js">
+    document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede o envio tradicional do formulário
+      const termo = document.getElementById('campoPesquisa').value.trim();
+      if (termo) {
+        // Redireciona com o termo como parâmetro na URL
+        window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+      }
+    });
+  </script>
 </body>
+
 </html>

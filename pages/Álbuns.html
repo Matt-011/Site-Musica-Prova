@@ -6,159 +6,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Álbuns - Mundo do Rap</title>
   <link rel="stylesheet" href="../css/estilo2.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
   <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <div class="logo">
-      <img src="../images/cd.png" alt="Logo" />
-    </div>
-    <div class="banner">
-      <h1>Mundo do Rap</h1>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/ajuda.html">Ajuda</a></li>
-      </ul>
-    </div>
+  <header class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="conteiner-fluid">
+        <a class="navbar-brand">
+          <img src="../images/cd.png" alt="logo" width="40" height="40">
+          Mundo do Rap
+        </a>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="navitem">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link active" href="../pages/Álbuns.html">Álbuns</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pesquisa">
+        <form action="../pages/resultado.html" method="GET">
+          <input type="text" name="q" placeholder="Pesquisar artista..." required>
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
   </header>
 
-  <section class="linha2">
-    <h2>Álbuns mais pesquisados</h2>
+  <section class="carrossel-container">
+    <h5 class="carrossel-titulo">Os Álbuns Mais Pesquisados</h5>
+
+    <button class="seta seta-esquerda"
+      onclick="document.getElementById('carrossel').scrollLeft -= 300">&#10094;</button>
+    <button class="seta seta-direita" onclick="document.getElementById('carrossel').scrollLeft += 300">&#10095;</button>
+
+    <div id="carrossel" class="carrossel-wrapper d-flex">
+      <div class="carrossel">
+        <div class="artista-card">
+          <a href="">
+            <img src="../images/My Beful Dark Twisted Fantasy.png" alt="My Beful Dark Twisted Fantasy">
+          </a>
+          <p>My Beautiful Dark Twisted Fantasy</p>
+        </div>
+        <div class="artista-card">
+          <img src="../images/JACKBOYS 2.png "alt="JACKBOYS 2">
+          <p>JACKBOYS 2</p>
+        </div>
+        <div class="artista-card">
+          <img src="../images/Kamikase.jpg" alt="Kamikase">
+          <p>Kamikase</p>
+        </div>
+        <div class="artista-card">
+          <a href="../pages/DON'TTAPTHEGLASS.html">
+            <img src="../images/DON'T TAP THE GLASS.png" alt="DON'T TAP THE GLASS">
+          </a>
+          <p>DON'T TAP THE GLASS</p>
+        </div>
+        <div class="artista-card">
+          <img src="../images/Ye_-_Kanye_West.png" alt="Ye">
+          <p>Ye</p>
+        </div>
+        <div class="artista-card">
+          <img src="../images/Yandhi.png" alt="Yandhi">
+          <p>Yandhi</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <main>
-    <div class="container">
-      <button class="arrow left" onclick="moveLeft()">❮</button>
-      <div class="carousel-wrapper">
-        <div class="carousel" id="carousel">
-          <div class="card">
-            <a href="../pages/KanyeWest.html">
-              <img src="../images/GNX.png" alt="GNX" />
-            </a>
-            <div class="card-texto">GNX</div>
-          </div>
-          <div class="card">
-            <a href="../pages/KLAlbuns.html">
-              <img src="../images/Good_kid,_m.d_city.png" alt="Good Kid, m.A.A.d City" />
-            </a>
-            <div class="card-texto">Good Kid, m.A.A.d City</div>
-          </div>
-          <div class="card">
-            <a href="../pages/EMIAlbuns.html">
-              <img src="../images/ASTROWORLD.png" alt="Eminem" />
-              <div class="card-texto">ASTROWORLD</div>
-            </a>
-          </div>
-          <div class="card">
-            <a href="../pages/Bully.html">
-              <img src="../images/bully.png" alt="Tyler, The Creator" />
-            </a>
-            <div class="card-texto">BULLY</div>
-          </div>
-          <div class="card">
-            <a href="../pages/TSAlbuns.html">
-              <img src="../images/JACKBOYS 2.png" alt="Travis Scott" />
-            </a>
-            <div class="card-texto">JACKBOYS 2</div>
-          </div>
-          <div class="card">
-            <a href="../pages/YUNAlbuns.html">
-              <img src="../images/Yeezuz.png" alt="YUNG LIXO / YUN LI" />
-            </a>
-            <div class="card-texto">Yeezuz</div>
-          </div>
-        </div>
-      </div>
-      <button class="arrow right" onclick="moveRight()">❯</button>
+  <!--TODOS OS ARTISTAS-->
+  <section class="todos-artistas">
+    <div class="cabecalho-artistas">
+      <h2>Todos os Artistas</h2>
+      <input type="text" id="pesquisa" placeholder="Pesquisar artista...">
     </div>
-    <hr>
 
-    <section class="todos-artistas">
-      <div class="cabecalho-artistas">
-        <h2>Todos os Artistas</h2>
-        <input type="text" id="pesquisa" placeholder="Pesquisar artista...">
-      </div>
-
-      <div class="letra-bloco" data-letra="E">
-        <h3>E</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="../pages/EMIAlbuns.html">
-              <img src="../images/eminem.jpg" alt="Eminem" />
-            </a>
-            <p>Eminem</p>
-          </div>
+    <div class="letra-bloco" data-letra="B">
+      <h3>B</h3>
+      <div class="artistas-letra">
+        <div class="artista">
+          <a href="../pages/Bully.html">
+            <img src="../images/bully.png" alt="Bully" />
+          </a>
+          <p>Bully</p>
         </div>
       </div>
+    </div>
 
-      <div class="letra-bloco" data-letra="J">
-        <h3>J</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="">
-              <img src="../images/Juice WRLD.jfif" alt="Juice WRLD" />
-            </a>
-            <p>Juice WRLD</p>
-          </div>
+    <div class="letra-bloco" data-letra="D">
+      <h3>D</h3>
+      <div class="artistas-letra">
+        <div class="artista">
+          <a href="../pages/DON'TTAPTHEGLASS.html">
+            <img src="../images/DON'T TAP THE GLASS.png" alt="DON'T TAP THE GLASS" />
+          </a>
+          <p>DON'T TAP THE GLASS</p>
+        </div>
+        <div class="artista">
+          <a href="../pages/Donda 2.html">
+            <img src="../images/Donda_2_by_Kanye_West.png" alt="Donda 2" />
+          </a>
+          <p>DONDA 2</p>
         </div>
       </div>
+    </div>
 
-      <div class="letra-bloco" data-letra="K">
-        <h3>K</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="../pages/KanyeWest.html">
-              <img src="../images/YE.png" alt="Kanye West" />
-            </a>
-            <p>Kanye West</p>
-          </div>
-          <div class="artista">
-            <a href="../pages/KLAlbuns.html">
-              <img src="../images/kdot.png" alt="Kendrick Lamar" />
-            </a>
-            <p>Kendrick Lamar</p>
-          </div>
+    <div class="letra-bloco" data-letra="G">
+      <h3>G</h3>
+      <div class="artistas-letra">
+        <div class="artista">
+          <a href="../pages/Graduation.html">
+            <img src="../images/Graduation.png" alt="Graduation" />
+          </a>
+          <p>Graduation</p>
         </div>
       </div>
+    </div>
 
-      <div class="letra-bloco" data-letra="T">
-        <h3>T</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="../pages/TSAlbuns.html">
-              <img src="../images/travis-scott.jpg" alt="Travis Scott" />
-            </a>
-            <p>Travis Scott</p>
-          </div>
-          <div class="artista">
-            <a href="../pages/TTCAlbuns.html">
-              <img src="../images/tyler.png" alt="Tyler, The Creator" />
-            </a>
-            <p>Tyler, The Creator</p>
-          </div>
+    <div class="letra-bloco" data-letra="J">
+      <h3>J</h3>
+      <div class="artistas-letra">
+        <div class="artista">
+          <a href="../pages/JesusisKing.html">
+            <img src="../images/jesus-is-king-1920x1920.png" alt="Jesus Is King" />
+          </a>
+          <p>Jesus Is King</p>
         </div>
       </div>
+    </div>
 
-      <div class="letra-bloco" data-letra="Y">
-        <h3>Y</h3>
-        <div class="artistas-letra">
-          <div class="artista">
-            <a href="../pages/YUNAlbuns.html">
-              <img src="../images/Yun Li.png" alt="YUN LI" />
-            </a>
-            <p>YUN LI</p>
-          </div>
+    <div class="letra-bloco" data-letra="O">
+      <h3>O</h3>
+      <div class="artistas-letra">
+        <div class="artista">
+          <a href="../pages/Óptica.html">
+            <img src="../images/Óptica.png" alt="Óptica" />
+          </a>
+          <p>Óptica</p>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div class="letra-bloco" data-letra="Y">
+      <h3>Y</h3>
+      <div class="artistas-letra">
+        <div class="artista">
+          <a href="../pages/ye.html">
+            <img src="../images/Ye_-_Kanye_West.png" alt="Ye" />
+          </a>
+          <p>Ye</p>
+        </div>
+      </div>
+    </div>
+  </section>
   </main>
 
   <footer class="rodape">
     <p>&copy; 2025 - Mundo do Rap</p>
   </footer>
 
-  <script>
+  <script src="../plugins/bootstrap/js/bootstrap.js">
     const carousel = document.getElementById('carousel');
     let scrollPosition = 0;
     const cardWidth = 220;
@@ -175,7 +199,8 @@
       if (scrollPosition > maxScroll) scrollPosition = maxScroll;
       carousel.style.transform = `translateX(-${scrollPosition}px)`;
     }
-
+  </script>
+  <script>
     const input = document.getElementById('pesquisa');
     input.addEventListener('input', () => {
       const termo = input.value.toLowerCase();

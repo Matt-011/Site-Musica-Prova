@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bully - Mundo do Rap</title>
   <link rel="stylesheet" href="../css/Bully.css">
+  <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
   <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
 </head>
+
 <body>
+  <header class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="conteiner-fluid">
+        <a class="navbar-brand">
+          <img src="../images/cd.png" alt="logo" width="40" height="40">
+          Mundo do Rap
+        </a>
+      </div>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav">
+            <li class="navitem">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+            </li>
+            <li class="navitem">
+              <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pesquisa">
+        <form action="../pages/resultado.html" method="GET">
+          <input type="text" name="q" placeholder="Pesquisar artista..." required>
+          <button type="submit">Buscar</button>
+        </form>
+
+      </div>
+    </nav>
+  </header>
   <div class="album-container">
     <div class="album-cover">
       <img src="../images/bully.png" alt="Bully" />
@@ -15,24 +57,30 @@
     <div class="album-info">
       <h1>BULLY</h1>
       <p>YE • 26/09/2025 • 5 Tracks + Demos • TBA</p><br>
-      <p>Tracklist:</p>
+      <p>Tracklist V2:</p>
     </div>
 
     <div class="tracklist">
       <ul>
         <li><a href="../pages/PREACHERMAN.html">1. PREACHER MAN <span class="tempo">3:08</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=GO9hm3x6100&list=OLAK5uy_kbgjtHzJ4UKC7VIRqgeSYGQIOsJBcG8Sk&index=2">2. BEAUTY AND THE BEAST <span class="tempo">1:45</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=kKEO75Ha1pk&list=OLAK5uy_kbgjtHzJ4UKC7VIRqgeSYGQIOsJBcG8Sk&index=3">3. DAMN <span class="tempo">2:12</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=oiRkspnrcCQ">4. LAST BREATH <span class="tempo">2:22</span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=WHl1TbhJ2-0">5. LOSING YOUR MIND <span class="tempo">3:26</span></a></li>
-        <li><a href="#">6. TBA <span class="tempo">TBD</span></a></li>
-        <li><a href="#">7. TBA <span class="tempo">TBD</span></a></li>
-        <li><a href="#">8. TBA <span class="tempo">TBD</span></a></li>
-        <li><a href="#">9. TBA <span class="tempo">TBD</span></a></li>
-        <li><a href="#">10. TBA <span class="tempo">TBD</span></a></li>
-        <li><a href="#">11. TBA <span class="tempo">TBD</span></a></li>
-        <li><a href="#">12. TBA <span class="tempo">TBD</span></a></li>
-        <li><a href="#">13. TBA <span class="tempo">TBD</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=GO9hm3x6100&list=OLAK5uy_kbgjtHzJ4UKC7VIRqgeSYGQIOsJBcG8Sk&index=2">2.
+            BEAUTY AND THE BEAST <span class="tempo">1:45</span></a></li>
+        <li><a
+            href="https://www.youtube.com/watch?v=kKEO75Ha1pk&list=OLAK5uy_kbgjtHzJ4UKC7VIRqgeSYGQIOsJBcG8Sk&index=3">3.
+            DAMN <span class="tempo">2:12</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=oiRkspnrcCQ">4. LAST BREATH <span class="tempo">2:22</span></a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=WHl1TbhJ2-0">5. LOSING YOUR MIND <span
+              class="tempo">3:26</span></a></li>
+        <li><a href="#">6. HIGHS AND LOWS <span class="tempo">TBD</span></a></li>
+        <li><a href="#">7. WHITE LINES / CLOSE TO YOU <span class="tempo">TBD</span></a></li>
+        <li><a href="#">8. BULLY / OH NO MY HOODIE, MY HOODIE / SERATONIN <span class="tempo">TBD</span></a></li>
+        <li><a href="#">9. CIRCLES <span class="tempo">TBD</span></a></li>
+        <li><a href="#">10. PEOPLE LIKE ME <span class="tempo">TBD</span></a></li>
+        <li><a href="#">11. CAN'T HURRY LOVE / I CAN'T BARE <span class="tempo">TBD</span></a></li>
+        <li><a href="#">12. SHOWTIME / THIS ONE HERE <span class="tempo">TBD</span></a></li>
+        <li><a href="#">13. MISSION CONTROL (HOLY ART THOU / HOLY)  <span class="tempo">TBD</span></a></li>
       </ul>
     </div>
     <div class="album-info">
@@ -40,29 +88,35 @@
     </div>
     <div class="tracklist">
       <ul>
-        <li><a href="https://www.youtube.com/watch?v=AxmXqrMQYis">HIGHTS AND LOWS <span class="tempo"></span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=qOZg8n-05Pg&list=PLXSC899n-A6SNhuTMiN77qVtOyB2V-c1f&index=5">BULLY / OH NO MY HOODIE, MY HOODIE / SERATONIN  <span class="tempo"></span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=mrSR4Ia0wPk&list=PLXSC899n-A6SNhuTMiN77qVtOyB2V-c1f&index=4">CIRCLES <span class="tempo"></span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=Nv2-0Jw4iN8&list=PLXSC899n-A6SNhuTMiN77qVtOyB2V-c1f&index=8">SHOWTIME / THIS ONE HERE <span class="tempo"></span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=PGzqaapTyAA">CAN'T HURRY LOVE / I CAN'T BARE <span class="tempo"></span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=kaMXFzmwyDk">WHITE LINES / CLOSE TO YOU <span class="tempo"></span></a></li>
-        <li><a href="https://www.youtube.com/watch?v=RliQ72K-jak">MELROSE <span class="tempo"></span></a></li>
-        <li><a href="">Sexy Boy / Red Eye / Red Eye Baby <span class="tempo"></span></a></li>
-        <li><a href="">Dark Matter <span class="tempo"></span></a></li>
-        <li><a href="">Love Love Love <span class="tempo"></span></a></li>
-        <li><a href="">Quiet (Retrabalhada de War) <span class="tempo"></span></a></li>
-        <li><a href="">Bobby Digital (Retrabalhada de War) <span class="tempo"></span></a></li>
-        <li><a href="">Matthew (Retrabalhada dos Vultures) <span class="tempo"></span></a></li>
-        <li><a href="">Holy Art Thouw (Pode estar em In A Perfect World) <span class="tempo"></span></a></li>
+        <li><a href="">MELROSE (BULLY ERA) <span class="tempo"></span></a></li>
+        <li><a href="">Sexy Boy / Red Eye / Red Eye Baby (BULLY ERA) <span class="tempo"></span></a></li>
+        <li><a href="">Dark Matter (BULLY ERA) <span class="tempo"></span></a></li>
+        <li><a href="">Love Love Love (YEBU ERA) <span class="tempo"></span></a></li>
+        <li><a href="">Quiet (WAR ERA) <span class="tempo"></span></a></li>
+        <li><a href="">Bobby Digital (WAR ERA) <span class="tempo"></span></a></li>
+        <li><a href="">Matthew (VULTURES ERA) <span class="tempo"></span></a></li>
         <li><a href="">Same Shit <span class="tempo"></span></a></li>
-        <li><a href="">This is The Glory (Retrabalhada de God's Country) <span class="tempo"></span></a></li>
-        <li><a href="">Hit the Lights <span class="tempo"></span></a></li>
+        <li><a href="">This is The Glory (GOD'S COUNTRY ERA) <span class="tempo"></span></a></li>
         <li><a href="">I Survived <span class="tempo"></span></a></li>
-        <li><a href="">Unbreakable Hearts <span class="tempo"></span></a></li>
-        <li><a href="">60/60 <span class="tempo"></span></a></li>
-        <li><a href="">60 miles <span class="tempo"></span></a></li>
+        <li><a href="">Unbreakable Hearts (BULLY ERA)<span class="tempo"></span></a></li>
+        <li><a href="">60/60 (BULLY ERA)<span class="tempo"></span></a></li>
+        <li><a href="">60 miles (BULLY ERA)<span class="tempo"></span></a></li>
       </ul>
     </div>
   </div>
+  <footer class="rodape">
+    <p>&copy; 2025 - Mundo do Rap</p>
+  </footer>
+  <script src="../plugins/bootstrap/js/bootstrap.js">
+    document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede o envio tradicional do formulário
+      const termo = document.getElementById('campoPesquisa').value.trim();
+      if (termo) {
+        // Redireciona com o termo como parâmetro na URL
+        window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+      }
+    });
+  </script>
 </body>
+
 </html>

@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 
-header{
+header {
   justify-content: space-between;
 }
 
-.navbar navbar-expand-lg navbar-dark bg-danger{
+.navbar navbar-expand-lg navbar-dark bg-danger {
   width: 1351px;
 }
 
-.form-inline{
+.form-inline {
   display: flex;
 }
 
@@ -115,7 +115,8 @@ header{
 .lancamentos-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Diminui o espaçamento entre os cards */
+  gap: 20px;
+  /* Diminui o espaçamento entre os cards */
   flex-wrap: wrap;
   margin-top: 30px;
 }
@@ -123,7 +124,8 @@ header{
 .card-lancamento2 {
   background-color: #000;
   color: white;
-  width: 220px; /* Um pouco menor que antes */
+  width: 220px;
+  /* Um pouco menor que antes */
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
   overflow: hidden;
@@ -161,7 +163,7 @@ header{
   background-color: #2ecc71;
 }
 
-  .proximos-lancamentos {
+.proximos-lancamentos {
   background-color: #111;
   padding-top: 50px;
   padding-bottom: 60px;

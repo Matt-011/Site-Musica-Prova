@@ -11,39 +11,46 @@
 </head>
 
 <body>
-
     <header class="bg-secondary">
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
             <div class="conteiner-fluid">
                 <a class="navbar-brand">
-                    <img src="../images/cd.png" alt="logo" width="70" height="70">
+                    <img src="../images/cd.png" alt="logo" width="40" height="40">
                     Mundo do Rap
                 </a>
             </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav">
-                    <li class="navitem">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="navitem">
-                        <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
-                    </li>
-                    <li class="navitem">
-                        <a class="nav-link" href="../pages/Artista.html">Artistas</a>
-                    </li>
-                    <li class="navitem">
-                        <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
-                    </li>
-                </ul>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="navitem">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pesquisa">
+                <form action="../pages/resultado.html" method="GET">
+                    <input type="text" name="q" placeholder="Pesquisar artista..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+
             </div>
         </nav>
     </header>
+
 
     <section class="banner-artista">
         <img src="../images/Kanyefotodeperfil.png" alt="Kanye West" class="foto-artista" />
@@ -92,7 +99,7 @@
     </section>
 
     <section class="albuns">
-        <h2>Álbuns Não Lançados (Descartados/Em Produção)</h2>
+        <h2>Álbuns Não Lançados (Em Produção/Descartados)</h2>
         <div class="grid-albuns">
             <div class="album">
                 <img src="../images/Yandhi.png" alt="Yandhi" />
@@ -115,13 +122,22 @@
                 <p>Good Ass Job (2008 - 2010)</p>
             </div>
         </div>
-        <a href="#" class="botao-todos">Ver todos os álbuns descartados</a>
+        <a href="../pages/KYAlbunsdes.html" class="botao-todos">Ver todos os álbuns descartados</a>
     </section>
 
     <footer class="rodape">
         <p>&copy; 2025 - Mundo do Rap</p>
     </footer>
-
+    <script src="../plugins/bootstrap/js/bootstrap.js">
+        document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede o envio tradicional do formulário
+      const termo = document.getElementById('campoPesquisa').value.trim();
+      if (termo) {
+        // Redireciona com o termo como parâmetro na URL
+        window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+      }
+    });
+    </script>
 </body>
 
 </html>
