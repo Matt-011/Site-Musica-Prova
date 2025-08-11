@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D$ Luqi - Mundo do Rap</title>
+    <link rel="stylesheet" href="../css/kanyewest.css" />
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
+</head>
+
+<body>
+    <header class="bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="conteiner-fluid">
+                <a class="navbar-brand">
+                    <img src="../images/cd.png" alt="logo" width="40" height="40">
+                    Mundo do Rap
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="navitem">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+                        </li>
+                        <li class="navitem">
+                            <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pesquisa">
+                <form action="../pages/resultado.html" method="GET">
+                    <input type="text" name="q" placeholder="Pesquisar artista..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="banner-artista">
+        <img src="../images/D$ luqi.png" alt="Kanye West" class="foto-artista" />
+        <h1>D$ Luqi</h1>
+    </section>
+
+    <section class="bio">
+        <div class="descricao">
+            <h2>Sobre o Artista</h2>
+            <p>
+                D$ Luqi virou destaque ao sair da sala de aula para se lançar na música com estilo próprio entre o rap versátil, o trap moderno e texturas inspiradas no rock alternativo, conquistando espaço no cenário nacional.
+            </p>
+        </div>
+    </section>
+
+    <section class="albuns">
+        <h2>Últimos Álbuns Lançados</h2>
+        <div class="grid-albuns">
+            <div class="album">
+                <img src="../images/A Odisseia do Neguinho Violento e Vingativo.png" alt="A Odisseia do Neguinho Violento e Vingativo" />
+                <p>A Odisseia do Neguinho Violento e Vingativo (2025)</p>
+            </div>
+            <div class="album">
+                <img src="../images/COLEUS.png" alt="COLEUS" />
+                <p>COLEUS (2025)</p>
+            </div>
+            <div class="album">
+                <img src="../images/QUIMERA.png" alt="QUIMERA" />
+                <p>QUIMERA (2025)</p>
+            </div>
+            <div class="album">
+                <img src="../images/O Emblema do Infinito.png" alt="O Emblema do Infinito" />
+                <p>O Emblema do Infinito (2024)</p>
+            </div>
+            <div class="album">
+                <img src="../images/Como alugar um triplex na cabeça dela.png" alt="Como alugar um triplex na cabeça dela" />
+                <p>Como alugar um triplex na cabeça dela (2024)</p>
+            </div>
+        </div>
+        <a href="" class="botao-todos">Ver todos os álbuns</a>
+    </section>
+
+    <footer class="rodape">
+        <p>&copy; 2025 - Mundo do Rap</p>
+    </footer>
+    <script src="../plugins/bootstrap/js/bootstrap.js">
+        document.getElementById('formPesquisa').addEventListener('submit', function (e) {
+      e.preventDefault(); // Impede o envio tradicional do formulário
+      const termo = document.getElementById('campoPesquisa').value.trim();
+      if (termo) {
+        // Redireciona com o termo como parâmetro na URL
+        window.location.href = `resultado.html?busca=${encodeURIComponent(termo)}`;
+      }
+    });
+    </script>
+</body>
+
+</html>
