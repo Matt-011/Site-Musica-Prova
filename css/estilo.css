@@ -122,30 +122,38 @@ header {
 }
 
 .card-lancamento2 {
-  background-color: #000;
-  color: white;
-  width: 220px;
-  /* Um pouco menor que antes */
+ background-color: #1c1c1c;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
   overflow: hidden;
-  text-align: center;
-  padding-bottom: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
   transition: transform 0.3s;
 }
 
 .card-lancamento2:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .card-lancamento2 img {
-  width: 100%;
+ width: 100%;
   height: auto;
-  border-bottom: 2px solid #ff4d4d;
+  display: block;
 }
 
 .card-lancamento2 .info {
-  padding: 10px;
+  padding: 15px;
+}
+
+.card-lancamento2 h3{
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.card-lancamento2 p{
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #fff;
 }
 
 .card-lancamento2 .btn-ouvir {
@@ -167,4 +175,20 @@ header {
   background-color: #111;
   padding-top: 50px;
   padding-bottom: 60px;
+}
+
+.botao-todos {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.botao-todos:hover {
+  background-color: darkred;
 }
