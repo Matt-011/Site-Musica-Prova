@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg,rgba(20, 77, 46, 1) 0%, rgba(82, 214, 74, 1) 50%, rgba(20, 77, 46, 1) 100%);
+    color: rgb(0, 0, 0);
+}
+
+header {
+    justify-content: space-between;
+}
+
+.navbar navbar-expand-lg navbar-dark bg-danger {
+    width: 1351px;
+}
+
+.form-inline {
+    display: flex;
+}
+
+.pesquisa {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa input[type="text"] {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.pesquisa button {
+    padding: 6px 12px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pesquisa button:hover {
+    background-color: #F9F1E4;
+}
+
+.album-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.album-cover img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.album-info {
+    text-align: center;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.album-info h1 {
+    font-size: 24px;
+    margin: 10px 0 5px;
+    color: rgb(0, 0, 0);
+}
+
+.album-info p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.tracklist {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.tracklist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tracklist li {
+    padding: 15px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.tracklist a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tracklist a:hover {
+    background-color: rgb(73, 190, 93);
+}
+
+.tempo {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (min-height: 400px) {
+
+    body.scroll .album-cover img,
+    body.scroll .album-info {
+        transform: scale(0.7);
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #888;
+    margin-top: 50px;
+}
