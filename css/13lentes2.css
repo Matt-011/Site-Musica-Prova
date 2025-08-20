@@ -6,66 +6,49 @@
 }
 
 body {
-    background: linear-gradient(90deg,rgba(237, 7, 187, 1) 0%, rgba(163, 6, 191, 1) 50%, rgba(207, 144, 8, 1) 100%);
-    color: white;
+    background: linear-gradient(90deg,rgb(255, 255, 255) 0%, rgb(255, 255, 255) 35%, rgba(255, 255, 255, 1) 100%);
+    color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
 }
 
-.cabecalho {
-    width: 100%;
-    display: flex;
-    background-color: aqua;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+header {
+  justify-content: space-between;
 }
 
-.logo {
-    width: 20%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar navbar-expand-lg navbar-dark bg-danger {
+  width: 1351px;
 }
 
-.logo img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.form-inline {
+  display: flex;
 }
 
-.banner {
-    width: 80%;
-    background-color: red;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
+.pesquisa {
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.banner h1 {
-    width: 100%;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+.pesquisa input[type="text"] {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
 }
 
-.banner ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: flex-end;
+.pesquisa button {
+  padding: 6px 12px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.banner ul li {
-    margin: 0 20px;
-}
-
-.banner ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.pesquisa button:hover {
+  background-color: #ddd;
 }
 
 /* Container */
@@ -89,7 +72,7 @@ body {
 }
 
 .detalhes a {
-    color: #f9c851;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -99,7 +82,7 @@ body {
 
 /* Letra */
 .letra {
-    background: white;
+    background: rgb(122, 118, 118);
     padding: 20px;
     border-radius: 6px;
     margin-bottom: 40px;
@@ -122,7 +105,7 @@ body {
 /* Final da página */
 .final-musicas {
     padding: 20px;
-    background: white;
+    background: rgb(122, 118, 118);
     border-radius: 6px;
 }
 
@@ -138,7 +121,7 @@ body {
 
 .lista-musicas li:hover {
     margin: 8px 0;
-    background-color: pink;
+    background-color: rgb(141, 141, 150);
 }
 
 .lista-musicas ol a {
@@ -149,6 +132,17 @@ body {
 }
 
 .lista-musicas ol a li strong {
+    color: orange;
+}
+
+.lista-musicas ul a {
+    text-decoration: none;
+    font-weight: bold;
+    list-style: none;
+    color: black;
+}
+
+.lista-musicas ul a li strong {
     color: orange;
 }
 
