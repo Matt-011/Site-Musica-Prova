@@ -13,40 +13,36 @@
 <body>
     <header class="bg-secondary">
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-            <div class="conteiner-fluid">
-                <a class="navbar-brand">
-                    <img src="images/cd.png" alt="logo" width="40" height="40">
-                    Mundo do Rap
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/cd.png" alt="logo" width="40" height="40" class="me-2">
+                    <span class="text-white text-decoration-none">Mundo do Rap</span>
                 </a>
-            </div>
-            <div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                    aria-controls="menu">
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav">
-                        <li class="navitem">
+                <div class="collapse navbar-collapse justify-content-between" id="menu">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
                             <a class="nav-link active" href="index.html">Home</a>
                         </li>
-                        <li class="navitem">
+                        <li class="nav-item">
                             <a class="nav-link" href="pages/Álbuns.html">Álbuns</a>
                         </li>
-                        <li class="navitem">
+                        <li class="nav-item">
                             <a class="nav-link" href="pages/Artista.html">Artistas</a>
                         </li>
-                        <li class="navitem">
+                        <li class="nav-item">
                             <a class="nav-link" href="pages/ajuda.html">Ajuda</a>
                         </li>
                     </ul>
+                    <form class="d-flex" action="pages/resultado.html" method="GET">
+                        <input class="form-control me-2" type="text" name="q" placeholder="Pesquisar artista..."
+                            required>
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </div>
-            <div class="pesquisa">
-                <form action="pages/resultado.html" method="GET">
-                    <input type="text" name="q" placeholder="Pesquisar artista..." required>
-                    <button type="submit">Buscar</button>
-                </form>
-
             </div>
         </nav>
     </header>
