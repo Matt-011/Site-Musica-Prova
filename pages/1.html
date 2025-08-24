@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartinha hehehe</title>
+  <link rel="shortcut icon" type="imagex/png" href="../images/IMG-20250811-WA0074.png">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffe6eb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Envelope */
+    .envelope {
+      width: 220px;
+      height: 160px;
+      background: #ff4d6d;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .envelope span {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    /* Carta tela cheia */
+    .carta {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 20px;
+      overflow-y: auto;
+      text-align: center;
+      z-index: 10;
+      animation: abrir 0.8s ease forwards;
+    }
+
+    .carta h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff2d55;
+    }
+
+    .carta p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      white-space: pre-line;
+    }
+
+    .carta img {
+      max-width: 90%;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    /* Botão fechar */
+    .fechar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* Animação abrir */
+    @keyframes abrir {
+      from {
+        transform: scale(0.2) rotateX(90deg);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1) rotateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Envelope -->
+  <div class="envelope" id="envelope">
+    <span>💌</span>
+  </div>
+
+  <!-- Carta -->
+  <div class="carta" id="carta">
+    <div class="fechar" id="fechar">❌</div>
+    <h1>💖 PARA O AMOR DA MINHA VIDA 💖</h1>
+    <p>
+PARA O AMOR DA MINHA VIDA!!!
+
+DESDE O DIA QUE NÓS CONHECEMOS EU JA SENTI UMA COISA DIFERENTE, MAS EU SO FUI SABER OQUE ERA NAQUELE SABADO, AI AQUELE SABADO COMO EU AMO LEMBRAR.
+VOCÊ PODE ESTAR SE PERGUNTANDO, "OQUE VOCÊ ESTAVA SENTINDO??", AGORA POSSO DIZER COM CERTEZA, ERA AMOR.
+UM AMOR QUE NUNCA VAI TER FIM, ESSE AMOR DESDE AQUELE DIA VEM SE MULTIPLICANDO CADA VEZ MAIS, MAIS E MAIS, HOJE ELE JA PASSOU O LIMITE DOS INFINITOS!
+AMO ESTAR AO SEU LADO TODOS OS DIAS, VOCÊ ME FAZ TÃO BEM, MAIS TÃO BEM QUE EU SINTO UMA PAZ MUITO GRANDE SE DE ESTAR AO SEU LADO, E MUITO MAIOR NO SEU ABRAÇO, ME FAZ SE SENTIR BEM POR SER SIMPLISMENTE VOCÊ. 
+AGRADEÇO A DEUS TODOS OS DIAS POR ELE TER FEITO A GENTE SE ENCONTRAR, TENHO CERTEZA QUE É DESTINO HEHEHE, AGRADEÇO POR TER ME APRESENTADO UMA MENINA TÃO LINDA, MARAVILHOSA, PERFEITA, AMOR DE PESSOA, CARINHOSA, CUIDADORA, CHARMOSA, ELEGANTE, FIEL, DIVERTIDA, INTELIGENTE E APAIXONANTE (BOTA APAIXONANTE NISSO HEHEHE).
+AIAI FICO CAIDINHO TODA VEZ QUE VEJO UMA FOTO SUA, PERCO ATÉ MEU FOLEGO!!
+FICO TODO FELIZINHO COM TODO QUE VOCÊ FAZ POR MIM OU ME DA, TUDO QUE VOCÊ ME DEU ATÉ HOJE ESTA GUARDADO NO MEU ARMARIO DE RECORDAÇÕES DE MOMENTOS FELIZES AO SEU LADO ( MELHORES COISAS PARA SE LEMBRAR, QUANDO NÃO POSSO DE VER ), VOCÊ TEM QUE VER MINHA FELICIDADE SÓ DE VOCÊ ME CHAMAR DE AMOR TODO DIA HEHEHE ( MINHA FELICIDADE TAMBÉM NO NOSSO PRIMEIRO BEIJO, AIAI TAVA TODO COM VERGONHA KKKKKKKK)
+EU TENHO CERTEZA QUE NOSSO FUTURO VAI DAR TUDO CERTO, DAQUI UM TEMPINHO CONVERSO COM SUA MÃE E VOCÊ VAI TER UMA ALIANÇA AI, BEM NO SEU DEDO, FAÇO QUESTÃO DISSO!!
+VAI VIR MUITOS E MUITOS MOEMNTOS FELIZES AO SEU LADO, E VOCÊ SABE QUE PODE CONTAR COMIGO PRA TUDO, SOU SEU NAMORADO ESTAREI AQUI POR QUALQUER COISINHA QUE VOCÊ PRECISAR, VOU SEMPRE APOIAR MEU AMOR!!!!
+COM TUDO ISSO PRA TE FALAR QUE EU TE AMO DEMAIS, DE UM JEITO INESPLICAVEL, TUDO ISSO QUE EU FALEI NÃO É 1% DO QUE EU TE AMO MEU AMOR!! VOCÊ FAZ MEUS DIAS MELHORES, ACORDO COM UMA VONTADE COM SEU BOM DIA E VOU DORMIR TRANQUILINHO COM SEU BOA NOITE
+
+TE AMO MUITO MEU AMOR, I LOVE YOU MY LOVE,TE AMO TANTO MI AMOR,ICH LIEBE DICH SO SEHR MEINE LIEBE,انا احبك كثيرا يا حبيبي, T'ESTIMO MOLT, AMOR MEU,我太愛你了，我的愛人, 나는 당신을 너무 많이 사랑해요, VOLIM TE PUNO, LJUBAVI MOJA, JEG ELSKER DIG SÅ HØJT, MIN KÆRE, TAKO MOČNO TE LJUBIM, LJUBEZEN MOJA, MAHAL NA MAHAL KITA MY LOVE, JE T'AIME TELLEMENT MON AMOUR, CHE RAYHU TUICHA CHE MBORAYHU, Ik hou zo veel van je, mijn liefste, אני אוהב אותך כל כך אהובתי, Is breá liom tú go mór, a ghrá geal, TI AMO COSÌ TANTO AMORE MIO, あなたをとても愛しています、愛しい人よ, ANG NONO BELAI KHE HAMJAK KHA ANI HAMJAKMA, Te vehementer amo, amor meus, ฉันรักคุณมากที่รักของฉัน, KOCHAM CIĘ TAK BARDZO, MOJA MIŁOŚCI, AMO-TE MUITO MEU AMOR, Я ТАК СИЛЬНО ЛЮБЛЮ ТЕБЯ, МОЯ ЛЮБОВЬ, Я ТАК СИЛЬНО ТЕБЕ ЛЮБЛЮ, МОЯ ЛЮБОВ, TE HERO RA AU IA OE, E TO'U HERE.
+
+COM MUITO AMOR, MATEUS ❤️
+    </p>
+    <img src="../images/20250818_164539.png" alt="Foto especial 1">
+    <img src="../images/IMG_20250820_191236_081.png" alt="Foto especial 2">
+    <img src="../images/IMG-20250811-WA0074.png" alt="Foto especial 3">
+  </div>
+
+  <script>
+    const envelope = document.getElementById("envelope");
+    const carta = document.getElementById("carta");
+    const fechar = document.getElementById("fechar");
+
+    // Abre a carta
+    envelope.addEventListener("click", () => {
+      carta.style.display = "flex";
+      envelope.style.display = "none";
+    });
+
+    // Fecha a carta
+    fechar.addEventListener("click", () => {
+      carta.style.display = "none";
+      envelope.style.display = "flex";
+    });
+
+    // Movimento suave no envelope
+    document.addEventListener("mousemove", (e) => {
+      if (envelope.style.display !== "none") {
+        const { innerWidth, innerHeight } = window;
+        const x = (e.clientX / innerWidth - 0.5) * 15;
+        const y = (e.clientY / innerHeight - 0.5) * 15;
+        envelope.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+      }
+    });
+  </script>
+</body>
+</html>
