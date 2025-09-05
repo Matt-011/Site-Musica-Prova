@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bittersweet Poetry - Kanye West</title>
     <link rel="stylesheet" href="../css/Graduation2.css" />
-     <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
+    <link rel="shortcut icon" type="imagex/png" href="../images/cd.png">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
     <script>
         function trocarCapa() {
             const capa = document.getElementById("albumCapa");
@@ -17,19 +18,40 @@
 
 <body>
     <!-- Banner topo -->
-    <header class="cabecalho">
-        <div class="logo">
-            <img src="../images/cd.png" alt="Logo do site">
-        </div>
-        <div class="banner">
-            <h1>Mundo do Rap</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/ajuda.html">Ajuda</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="bg-secondary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/cd.png" alt="logo" width="40" height="40" class="me-2">
+                    <span class="text-white text-decoration-none">Mundo do Rap</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/Álbuns.html">Álbuns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/Artista.html">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ajuda.html">Ajuda</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" action="../pages/resultado.html" method="GET">
+                        <input class="form-control me-2" type="text" name="q" placeholder="Pesquisar artista..."
+                            required>
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Caixa flutuante com vídeo (menor e corrigido) -->
@@ -224,6 +246,8 @@
     <footer>
         <p>&copy; 2025 Mundo do Rap — Todos os direitos reservados.</p>
     </footer>
+
+    <script src="../plugins/bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>
